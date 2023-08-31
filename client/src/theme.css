@@ -1,0 +1,64 @@
+@media (prefers-color-scheme: light) {
+  html {
+      --light: var(--on);
+      --dark: var(--off);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+      --light: var(--off);
+      --dark: var(--on);
+  }
+}
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+
+  color: var(--zin-on-background);
+  background-color: var(--zin-background);
+
+  --zin0: #1f2328;
+  --zin1: #2e3640;
+  --zin2: #23272e;
+  --zin3: #191c20;
+
+  --zin4: #eeeff2;
+  --zin5: #f5f7fa;
+  --zin6: #eef0f3;
+
+  --zin7: #df702b;
+  --zin8: #33648a;
+  --zin9: #d5614d;
+  --zin10: #61a6cb;
+
+  --zin11: #de983c;
+  --zin12: #f5f518;
+  --zin13: #03a2d3;
+  --zin14: #74d8e6;
+  --zin15: #1d2f35;
+
+  --zin-primary:           var(--light, var(--zin13))  var(--dark, var(--zin10));
+  --zin-primary-variant:   var(--light, var(--zin14))  var(--dark, var(--zin7));
+  --zin-secondary:         var(--light, var(--zin12))  var(--dark, var(--zin10));
+  --zin-background:        var(--light, var(--zin6))  var(--dark, var(--zin0));
+  --zin-surface:           var(--light, var(--zin5))  var(--dark, var(--zin1));
+  --zin-surface-secondary: var(--light, var(--zin4))  var(--dark, var(--zin2));
+  --zin-warning:           var(--light, var(--zin11)) var(--dark, var(--zin7));
+  --zin-error:             var(--light, var(--zin12)) var(--dark, var(--zin9));
+  --zin-disabled:          var(--light, var(--zin0)) var(--dark, var(--zin0));
+  --zin-dark:              var(--light, var(--zin0)) var(--dark, var(--zin0));
+  --zin-active:            var(--light, var(--zin11)) var(--dark, var(--zin11));
+  --zin-active-variant:    var(--light, var(--zin13)) var(--dark, var(--zin13));
+  --zin-on-primary:        var(--light, var(--zin4))  var(--dark, var(--zin4));
+  --zin-on-secondary:      var(--light, var(--zin4))  var(--dark, var(--zin4));
+  --zin-on-background:     var(--light, var(--zin2))  var(--dark, var(--zin4));
+  --zin-on-surface:        var(--light, var(--zin2))  var(--dark, var(--zin4));
+  --zin-on-warning:        var(--light, var(--zin4))  var(--dark, var(--zin4));
+  --zin-on-error:          var(--light, var(--zin4))  var(--dark, var(--zin4));
+
+  --md-sys-color-primary: var(--zin-primary);
+  --md-sys-color-on-surface-variant: var(--zin-on-surface);
+}

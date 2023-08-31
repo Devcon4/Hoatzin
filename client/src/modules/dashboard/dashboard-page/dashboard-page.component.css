@@ -1,0 +1,75 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  flex: 1;
+  padding: 0 24px;
+
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chip {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  border-radius: 100px;
+}
+
+.header {
+  font-size: 38px;
+  font-weight: 200;
+  padding: 24px 0;
+  position: sticky;
+  top: 0px;
+}
+
+.card.banner {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner button {
+  align-self: center;
+  justify-self: flex-end;
+}
+
+.card h1 {
+  flex: 1;
+  font-size: 42px;
+  text-align: center;
+}
+
+.status-border {
+  border-left-width: 6px;
+  border-left-style: solid;
+}
+
+.card {
+  max-width: 1080px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  border-radius: 5px;
+
+  
+  padding: 12px;
+  filter: drop-shadow(0 0px 2px rgba(0,0,0,.2));
+}
+
+.card-color {
+  background-color: var(--zin-surface-secondary);
+}
+
+@media screen and (max-width: 1080px) {
+  .card h1 {
+    text-align: start;
+  }
+}

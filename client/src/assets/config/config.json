@@ -1,0 +1,12 @@
+{
+  "clients": {
+    "api": {
+      "host": "http://localhost:4540",
+      "prefix": "api"
+    },
+    "ws": {
+      "host": "ws://localhost:4510",
+      "prefix": "api"
+    }
+  }
+}

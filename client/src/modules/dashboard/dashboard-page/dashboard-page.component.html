@@ -1,0 +1,20 @@
+<div class="banner card card-color">
+  <h1 class="header">Hoatzin Dashboard</h1>
+  <md-icon-button (click)="toggleTheme()">
+    <md-icon *ngIf="isDark | async">light_mode</md-icon>
+    <md-icon *ngIf="isLight | async">dark_mode</md-icon>
+  </md-icon-button>
+</div>
+
+<ng-container *ngFor="let site of sites | async; trackBy: trackBySiteId">
+  <div
+    class="card card-color status-border"
+    [class.Completed]="site.up"
+    [class.Failed]="site.down">
+    <div class="title">
+      <h3>{{ site.name }}</h3>
+      <div class="chip">status: {{ site.status }}</div>
+    </div>
+    <zin-status-graph [checks]="site.checks"></zin-status-graph>
+  </div>
+</ng-container>

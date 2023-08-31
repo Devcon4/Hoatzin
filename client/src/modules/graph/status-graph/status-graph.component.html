@@ -1,0 +1,5 @@
+<div class="check" *ngFor="let check of checks; trackBy: trackByCheckId">
+  <div class="upper">{{ check.dateCreatedFormatted }}</div>
+  <div class="status" [ngClass]="check.status"></div>
+  <div class="lower">{{ check.requestTime }}</div>
+</div>
