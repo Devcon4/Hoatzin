@@ -1,0 +1,42 @@
+version: '3.4'
+services:
+  seq:
+    image: datalust/seq:latest
+    ports:
+      - '4520:80'
+    networks:
+      - hoatzin
+    environment:
+      - ACCEPT_EULA=Y
+  whoami0:
+    image: traefik/whoami
+    ports:
+      - '4530:80'
+    networks:
+      - hoatzin
+  whoami1:
+    image: traefik/whoami
+    ports:
+      - '4531:80'
+    networks:
+      - hoatzin
+  whoami2:
+    image: traefik/whoami
+    ports:
+      - '4532:80'
+    networks:
+      - hoatzin
+  whoami3:
+    image: traefik/whoami
+    ports:
+      - '4533:80'
+    networks:
+      - hoatzin
+  whoami4:
+    image: traefik/whoami
+    ports:
+      - '4534:80'
+    networks:
+      - hoatzin
+networks:
+  hoatzin:
